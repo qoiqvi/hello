@@ -2,18 +2,18 @@ import TextPressure from "@/components/TextPressure/TextPressure";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full flex items-center justify-center">
+    <main style={{minHeight: '100dvh'}} className="w-full flex items-center justify-center overflow-hidden">
       <TextPressure 
         text="vaschenko"
         flex={false}
         alpha={true}
-        stroke={false}
+        stroke={true}
         width={false}
         weight={false}
         textColor="#0f0f0f"
         strokeColor="#0f0f0f"
-        minFontSize={120} 
-        className="cursor-none select-none"
+        minFontSize={60}
+        className="cursor-none select-none md:text-[120px] text-[60px]"
       />
     </main>
   );
