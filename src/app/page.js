@@ -2,7 +2,15 @@ import TextPressure from "@/components/TextPressure/TextPressure";
 
 export default function Home() {
   return (
-    <main style={{minHeight: '100dvh'}} className="w-full flex items-center justify-center overflow-hidden">
+    <main style={{
+      minHeight: '100dvh',
+      overflow: 'hidden',
+      position: 'fixed',
+      width: '100%',
+      height: '100%',
+      top: 0,
+      left: 0
+    }} className="w-full flex items-center justify-center">
       <TextPressure 
         text="vaschenko"
         flex={false}
